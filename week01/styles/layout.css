@@ -3,20 +3,69 @@
     padding: 0;
 }
 
-
 footer {
     background: #9A8C98;
     padding: 2rem;
     text-align: center;
     grid-column: 1/4;
+    height: 80px;
 }
 
 .main-content {
     background: #C9ADA7;
+    padding: 20px;
 }
 
 .aside-content {
     background: #F2E9E4;
+    padding: 20px;
 }
 
+.contenidoedit {
+    display: grid;
+    /* Utilizamos grid para el contenedor principal */
+    grid-template-columns: 2fr 1fr;
+    /* Definimos las columnas con proporciones */
+    width: 100%;
+    /* Opcional: ocupar todo el ancho disponible */
+    height: 395px;
+}
 
+/*BARRA DE NAVEGACION*/
+
+.menu a {
+    flex: 1 1 100%;
+}
+
+.navigation {
+    list-style: none;
+    display: flex;
+    /*esto extiende las cosas por toda la pagina*/
+    background-color: #4A4E69;
+    align-items: center;
+}
+
+.navigation a {
+    display: block;
+    color: #ffff;
+    /* color texto*/
+    padding: 1rem;
+    text-decoration: none;
+    /*quita el subrayado por defaut*/
+    text-align: center;
+    /*centra todo en su respectivo lugar*/
+}
+
+.navigation a:hover {
+    /*El efecto hover es una interacción en la interfaz de usuario que ocurre cuando el cursor del mouse se posiciona sobre un elemento*/
+    font-weight: 700;
+
+}
+
+/*HEADER*/
+
+.header1 {
+    background: #9A8C98;
+    padding: 2rem;
+    height: 50px;
+}
