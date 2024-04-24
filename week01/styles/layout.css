@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+
 }
 
 footer {
@@ -68,4 +69,14 @@ footer {
     background: #9A8C98;
     padding: 2rem;
     height: 50px;
+}
+
+
+@media (max-width: 768px) {
+
+    /* para pantallas mas pequeñas */
+    .contenidoedit {
+        grid-template-columns: 1fr;
+        /* una sola columna en dispositivos pequeños */
+    }
 }
